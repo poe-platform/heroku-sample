@@ -1,13 +1,13 @@
 repos:
   # Order matters because pyupgrade may make changes that pycln and black have to clean up
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.0
+    rev: v3.19.1
     hooks:
       - id: pyupgrade
         args: [--py37-plus]
 
   - repo: https://github.com/hadialqattan/pycln
-    rev: v2.4.0
+    rev: v2.5.0
     hooks:
       - id: pycln
         args: [--config=pyproject.toml]
